@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 32px;
+  }
+}
