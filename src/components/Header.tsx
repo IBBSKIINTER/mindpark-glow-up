@@ -22,7 +22,7 @@ const Header = () => {
         </span>
       </a>
 
-      <nav className="flex items-center gap-2">
+      <nav className="flex items-center gap-2 max-md:gap-1">
         {[
           { label: "Om oss", id: "about" },
           { label: "Anmäl dig", id: "enlist" },
@@ -30,14 +30,14 @@ const Header = () => {
           <button
             key={item.id}
             onClick={() => scrollTo(item.id)}
-            className="px-3 py-2 rounded-lg font-semibold text-sm text-foreground/90 hover:text-primary-foreground hover:gradient-orange transition-all hover:-translate-y-0.5 hover:shadow-lg bg-transparent border-none cursor-pointer"
+            className="px-2 md:px-3 py-2 rounded-lg font-semibold text-xs md:text-sm text-foreground/90 hover:text-primary-foreground hover:gradient-orange transition-all hover:-translate-y-0.5 hover:shadow-lg bg-transparent border-none cursor-pointer"
           >
             {item.label}
           </button>
         ))}
         <button
           onClick={() => scrollTo("contact")}
-          className="px-4 py-2 rounded-lg font-bold text-sm gradient-orange text-primary-foreground shadow-lg hover:-translate-y-0.5 transition-all border-none cursor-pointer"
+          className="px-3 md:px-4 py-2 rounded-lg font-semibold text-xs md:text-sm text-foreground/90 hover:text-primary-foreground hover:gradient-orange transition-all hover:-translate-y-0.5 hover:shadow-lg bg-transparent border-none cursor-pointer"
         >
           Kontakta
         </button>
