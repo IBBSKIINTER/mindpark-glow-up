@@ -1,5 +1,5 @@
 import logo from "@/assets/logo.png";
-
+console.log("HEADER LOADED");
 const Header = () => {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -10,19 +10,20 @@ const Header = () => {
   };
 
   return (
-    <header className="... px-6 py-3 max-md:px-3 max-md:py-2">
+    <header className="fixed top-0 left-0 right-0 z-50 flex flex-wrap items-center justify-between px-6 py-3 bg-background/85 backdrop-blur-md border-b border-border/30 shadow-lg shadow-background/60 max-md:px-3 max-md:py-2">
       <a href="#" className="flex items-center gap-3 no-underline group">
         <img
           src={logo}
           alt="Nerdklubben logga"
           className="w-12 h-12 object-contain rounded-lg drop-shadow-[0_0_6px_hsl(var(--neon-purple)/0.6)] group-hover:scale-105 transition-transform"
         />
-        <span className="font-bold text-lg tracking-wide text-foreground group-hover:text-primary transition-colors group-hover:drop-shadow-[0_0_8px_hsl(var(--neon-purple)/0.6)]">
+
+        <span className="font-bold text-base md:text-lg tracking-wide text-foreground/90 group-hover:text-primary-foreground group-hover:gradient-orange transition-colors">
           Nerdklubben
         </span>
       </a>
 
-      <nav className="flex items-center gap-2 text-[12px] md:text-sm whitespace-nowrap">
+      <nav className="flex items-center gap-3 md:gap-2 flex-wrap justify-end max-md:w-full max-md:justify-center">
         {[
           { label: "Om oss", id: "about" },
           { label: "Anmäl dig", id: "enlist" },
