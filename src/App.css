@@ -42,7 +42,12 @@
 }
 
 @media (max-width: 768px) {
-  section {
-    margin-bottom: 32px;
+  nav {
+    padding: 12px 16px;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 12px;
   }
 }
