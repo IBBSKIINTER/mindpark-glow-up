@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (!el) return;
@@ -35,7 +37,7 @@ const HeroSection = () => {
               Kom igång
             </button>
             <button
-              onClick={() => scrollTo("about")}
+              onClick={() => navigate("/las-mer")}
               className="px-6 py-3 rounded-xl font-bold bg-transparent text-secondary border border-secondary/20 hover:bg-secondary/10 hover:-translate-y-0.5 transition-all cursor-pointer text-base"
             >
               Läs mer
