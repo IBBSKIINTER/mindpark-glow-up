@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-background/85 backdrop-blur-md border-b border-border/30 shadow-lg shadow-background/60">
+    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-background/85 backdrop-blur-md border-b border-border/30 shadow-lg shadow-background/60 max-md:px-3">
       <a href="#" className="flex items-center gap-3 no-underline group">
         <img
           src={logo}
@@ -22,7 +22,7 @@ const Header = () => {
         </span>
       </a>
 
-      <nav className="flex items-center gap-2 max-md:gap-1">
+      <nav className="flex items-center gap-1 scale-90 max-md:scale-75 origin-right">
         {[
           { label: "Om oss", id: "about" },
           { label: "Anmäl dig", id: "enlist" },
