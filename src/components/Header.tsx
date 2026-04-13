@@ -10,20 +10,19 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between flex-wrap gap-2 px-3 py-2 bg-background/85 backdrop-blur-md border-b border-border/30 shadow-lg">
-      <a href="#" className="flex items-center gap-3 no-underline group">
+    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-3 py-2 bg-background/85 backdrop-blur-md border-b border-border/30 shadow-lg">
+      <a href="#" className="flex items-center gap-2 no-underline group shrink-0">
         <img
           src={logo}
           alt="Nerdklubben logga"
-          className="w-12 h-12 object-contain rounded-lg drop-shadow-[0_0_6px_hsl(var(--neon-purple)/0.6)] group-hover:scale-105 transition-transform"
+          className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-lg drop-shadow-[0_0_6px_hsl(var(--neon-purple)/0.6)] group-hover:scale-105 transition-transform"
         />
-
-        <span className="font-bold text-base md:text-lg tracking-wide">
+        <span className="font-bold text-sm md:text-lg tracking-wide hidden sm:inline">
           Nerdklubben
         </span>
       </a>
 
-      <nav className="flex items-center gap-1 flex-wrap">
+      <nav className="flex items-center gap-1">
         {[
           { label: "Om oss", id: "about" },
           { label: "Anmäl dig", id: "enlist" },
