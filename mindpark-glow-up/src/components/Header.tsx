@@ -1,4 +1,4 @@
-import logo from "@/assets/Lilahjärna.png";
+import logo from "@/assets/Lilahjärna2.png";
 
 const Header = () => {
   const scrollTo = (id: string) => {
