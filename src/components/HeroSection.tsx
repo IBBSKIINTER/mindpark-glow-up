@@ -21,7 +21,7 @@ const HeroSection = () => {
       }}
     >
       <div className="relative z-10 max-w-[1200px] w-full mx-auto px-6 md:px-12 pt-32 pb-20">
-        <div className="glass-card rounded-2xl p-8 md:p-14 md:pl-14 max-w-[700px]">
+        <div className="glass-card rounded-2xl p-8 md:p-14 md:pl-14 max-w-[700px] shadow-[0_0_20px_hsl(var(--neon-purple)/0.4)] border border-primary/30">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground leading-tight">
             Vad är Nerdklubben?
           </h1>
