@@ -17,7 +17,7 @@ const Header = () => {
           alt="Nerdklubben logga"
           className="w-12 h-12 object-contain rounded-lg drop-shadow-[0_0_6px_hsl(var(--neon-purple)/0.6)]"
         />
-        <span className="font-bold text-lg tracking-wide text-foreground">
+        <span className="font-bold text-lg tracking-wide text-primary drop-shadow-[0_0_8px_hsl(var(--neon-purple)/0.6)]">
           Nerdklubben
         </span>
       </a>
