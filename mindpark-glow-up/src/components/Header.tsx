@@ -11,13 +11,13 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-background/85 backdrop-blur-md border-b border-border/30 shadow-lg shadow-background/60">
-      <a href="#" className="flex items-center gap-3 no-underline">
+      <a href="#" className="flex items-center gap-3 no-underline shadow-[0_0_12px_hsl(var(--neon-purple)/0.5)] rounded-lg">
         <img
           src={logo}
           alt="Nerdklubben logga"
           className="w-12 h-12 object-contain rounded-lg drop-shadow-[0_0_6px_hsl(var(--neon-purple)/0.6)]"
         />
-        <span className="font-bold text-lg tracking-wide text-primary drop-shadow-[0_0_8px_hsl(var(--neon-purple)/0.6)]">
+        <span className="font-bold text-lg tracking-wide text-foreground">
           Nerdklubben
         </span>
       </a>
