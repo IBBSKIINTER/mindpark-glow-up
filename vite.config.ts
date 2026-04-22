@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/mindpark-glow-up/",
+  base: "/mindpark-glow-up",
   server: {
     host: "::",
     port: 8080,
